@@ -17,42 +17,12 @@
 # signal
 # urgent
 
-command=~/.local/bin//statusbar/$BLOCK_NAME
+command=~/.local/statusbar/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
 [musictitle]
 interval=1
-
-[isscreengrab]
-interval=60
-signal=6
-
-[csv-mount-check]
-command=csv-mount-check ~/.config/anemo/mounts.csv
-signal=9
-interval=30
-
-#[474]
-#label=⏰
-#interval=60
-#signal=15
-
-#[music]
-#label=🎵
-#interval=once
-#signal=11
-
-#[corona]
-#interval=30
-#signal=14
-
-#[twitch]
-#interval=30
-
-#[stream]
-#interval=30
-#signal=8
 
 [uptime]
 label=🔼
@@ -88,21 +58,8 @@ label=🏠
 instance=/home
 interval=60
 
-[disk]
-label=💽
-instance=/var/kvm
-interval=60
-
 [pacgrade]
 interval=300
-
-#[ssh]
-#signal=7
-#interval=60
-
-#[ufw]
-#interval=300
-#signal=12
 
 [nettraf]
 interval=1
