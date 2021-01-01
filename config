@@ -1,0 +1,132 @@
+# i3blocks config file
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+command=~/.local/bin//statusbar/$BLOCK_NAME
+separator_block_width=15
+markup=pango
+
+[musictitle]
+interval=1
+
+[isscreengrab]
+interval=60
+signal=6
+
+[csv-mount-check]
+command=csv-mount-check ~/.config/anemo/mounts.csv
+signal=9
+interval=30
+
+#[474]
+#label=⏰
+#interval=60
+#signal=15
+
+#[music]
+#label=🎵
+#interval=once
+#signal=11
+
+#[corona]
+#interval=30
+#signal=14
+
+#[twitch]
+#interval=30
+
+#[stream]
+#interval=30
+#signal=8
+
+[uptime]
+label=🔼
+interval=60
+
+[temperature]
+interval=3
+
+[load_average]
+label=🧠
+interval=3
+
+[cpu_freq]
+label=🎚️
+interval=3
+
+[fan_speed]
+command=cat /sys/class/hwmon/*/fan1_input
+label=🌀
+interval=3
+
+[memory]
+label=📈
+interval=10
+
+[disk]
+label=💻
+instance=/
+interval=60
+
+[disk]
+label=🏠
+instance=/home
+interval=60
+
+[disk]
+label=💽
+instance=/var/kvm
+interval=60
+
+[pacgrade]
+interval=300
+
+#[ssh]
+#signal=7
+#interval=60
+
+#[ufw]
+#interval=300
+#signal=12
+
+[nettraf]
+interval=1
+
+[iface]
+signal=13
+interval=10
+
+[wifi-check]
+interval=10
+
+[battery]
+interval=60
+
+[pulse]
+interval=60
+signal=11
+
+[date]
+label=📆
+command=date '+%b %d'
+interval=3600
+
+[time]
+command=emojitime
+interval=60
+
